@@ -10,6 +10,7 @@ from core.api import get_basic_pokemon_info
 from core.display import welcome, ask_draw, draw_animation, say_goodbye
 from core.storage import load_pokemon_list, check_duplicate
 import metadata
+from core.loadingGUI import LoadingGUI
 
 
 def main():
@@ -17,6 +18,8 @@ def main():
     Main function to run the Pokemon Card Draw Game.
     It initializes the game, loads the Pokemon list, and handles user input.
     """
+    # Initialize loading GUI
+    LoadingGUI()
     welcome()
     pokemon_list = load_pokemon_list()
 
