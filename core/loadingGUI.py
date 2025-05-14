@@ -7,7 +7,7 @@ def loading_gui():
     print("\nLoading", end="", flush=True)
     for _ in range(3):
         print(".", end="", flush=True)
-        time.sleep(2)
+        time.sleep(1.5)
     print("\n\nLoading complete!\n\n")
 
 if __name__ == "__main__":
